@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 // Base URL for the backend API
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'https://assignment01-mj8h.onrender.com';
 
 // Function to fetch data from a given endpoint
 export const fetchData = async (endpoint) => {
