@@ -1,122 +1,50 @@
 [
   {
-    "count": 5,
-    "acv": 238547.19,
+    "count": 46,
+    "acv": 1322309.9899999998,
     "closed_fiscal_quarter": "2023-Q3",
-    "Team": "Asia Pac"
+    "Cust_Type": "Existing Customer"
   },
   {
-    "count": 2,
-    "acv": 165000,
+    "count": 14,
+    "acv": 983031.39,
     "closed_fiscal_quarter": "2023-Q3",
-    "Team": "Enterprise"
+    "Cust_Type": "New Customer"
   },
   {
-    "count": 38,
-    "acv": 778384.3500000001,
-    "closed_fiscal_quarter": "2023-Q3",
-    "Team": "Europe"
-  },
-  {
-    "count": 7,
-    "acv": 87409.84,
-    "closed_fiscal_quarter": "2023-Q3",
-    "Team": "Latin America"
-  },
-  {
-    "count": 8,
-    "acv": 1036000,
-    "closed_fiscal_quarter": "2023-Q3",
-    "Team": "North America"
-  },
-  {
-    "count": 13,
-    "acv": 349600,
+    "count": 45,
+    "acv": 1124856.9500000002,
     "closed_fiscal_quarter": "2023-Q4",
-    "Team": "Asia Pac"
-  },
-  {
-    "count": 3,
-    "acv": 192000,
-    "closed_fiscal_quarter": "2023-Q4",
-    "Team": "Enterprise"
-  },
-  {
-    "count": 31,
-    "acv": 736276.98,
-    "closed_fiscal_quarter": "2023-Q4",
-    "Team": "Europe"
-  },
-  {
-    "count": 6,
-    "acv": 54279.97000000001,
-    "closed_fiscal_quarter": "2023-Q4",
-    "Team": "Latin America"
-  },
-  {
-    "count": 2,
-    "acv": 180000,
-    "closed_fiscal_quarter": "2023-Q4",
-    "Team": "North America"
-  },
-  {
-    "count": 4,
-    "acv": 255204.87,
-    "closed_fiscal_quarter": "2024-Q1",
-    "Team": "Asia Pac"
-  },
-  {
-    "count": 6,
-    "acv": 530865,
-    "closed_fiscal_quarter": "2024-Q1",
-    "Team": "Enterprise"
-  },
-  {
-    "count": 35,
-    "acv": 569561.3799999999,
-    "closed_fiscal_quarter": "2024-Q1",
-    "Team": "Europe"
-  },
-  {
-    "count": 7,
-    "acv": 53346.200000000004,
-    "closed_fiscal_quarter": "2024-Q1",
-    "Team": "Latin America"
-  },
-  {
-    "count": 5,
-    "acv": 264258.95999999996,
-    "closed_fiscal_quarter": "2024-Q1",
-    "Team": "North America"
-  },
-  {
-    "count": 9,
-    "acv": 229533.33000000002,
-    "closed_fiscal_quarter": "2024-Q2",
-    "Team": "Asia Pac"
-  },
-  {
-    "count": 3,
-    "acv": 57750,
-    "closed_fiscal_quarter": "2024-Q2",
-    "Team": "Enterprise"
+    "Cust_Type": "Existing Customer"
   },
   {
     "count": 10,
-    "acv": 322089.88,
-    "closed_fiscal_quarter": "2024-Q2",
-    "Team": "Europe"
+    "acv": 387300,
+    "closed_fiscal_quarter": "2023-Q4",
+    "Cust_Type": "New Customer"
   },
   {
-    "count": 3,
-    "acv": 26791.57,
-    "closed_fiscal_quarter": "2024-Q2",
-    "Team": "Latin America"
+    "count": 51,
+    "acv": 1360047.1599999997,
+    "closed_fiscal_quarter": "2024-Q1",
+    "Cust_Type": "Existing Customer"
   },
   {
-    "count": 4,
-    "acv": 236300,
+    "count": 6,
+    "acv": 313189.25,
+    "closed_fiscal_quarter": "2024-Q1",
+    "Cust_Type": "New Customer"
+  },
+  {
+    "count": 23,
+    "acv": 647821.48,
     "closed_fiscal_quarter": "2024-Q2",
-    "Team": "North America"
+    "Cust_Type": "Existing Customer"
+  },
+  {
+    "count": 6,
+    "acv": 224643.3,
+    "closed_fiscal_quarter": "2024-Q2",
+    "Cust_Type": "New Customer"
   }
 ]

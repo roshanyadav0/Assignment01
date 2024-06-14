@@ -1,27 +1,36 @@
-// server.ts
-
 import express from 'express';
 import fs from 'fs';
 import path from 'path';
+import cors from 'cors';
 
-// Create an Express application
 const app = express();
 const port = 3000;
 
-// Helper function to read JSON files
-const readJsonFile = (filePath: string) => {
-    try {
-        const data = fs.readFileSync(path.resolve(__dirname, filePath), 'utf-8');
-        return JSON.parse(data);
-    } catch (error) {
-        console.error(`Error reading file ${filePath}:`, error);
-        return null;
-    }
+app.use(cors());
+
+const dataDir = path.join(__dirname, 'data');
+const jsonData: { [key: string]: any } = {};
+
+const loadJsonData = () => {
+    const files = ['Customer Type.json', 'Account Industry.json', 'ACV Range.json', 'Team.json'];
+
+    files.forEach(file => {
+        try {
+            const filePath = path.join(dataDir, file);
+            const data = fs.readFileSync(filePath, 'utf-8');
+            const key = path.basename(file, '.json').toLowerCase().replace(/\s/g, '-');
+            jsonData[key] = JSON.parse(data);
+        } catch (error) {
+            console.error(`Error reading file ${file}:`, error);
+        }
+    });
 };
 
-// Define routes for each JSON data category
+loadJsonData();
+
+// Routes for each JSON data category
 app.get('/customer-types', (req, res) => {
-    const data = readJsonFile('Customer Type.json');
+    const data = jsonData['customer-type'];
     if (data) {
         res.json(data);
     } else {
@@ -30,7 +39,7 @@ app.get('/customer-types', (req, res) => {
 });
 
 app.get('/account-industries', (req, res) => {
-    const data = readJsonFile('Account Industry.json');
+    const data = jsonData['account-industry'];
     if (data) {
         res.json(data);
     } else {
@@ -39,7 +48,7 @@ app.get('/account-industries', (req, res) => {
 });
 
 app.get('/acv-ranges', (req, res) => {
-    const data = readJsonFile('ACV Range.json');
+    const data = jsonData['acv-range'];
     if (data) {
         res.json(data);
     } else {
@@ -47,7 +56,15 @@ app.get('/acv-ranges', (req, res) => {
     }
 });
 
-// Start the server
+app.get('/team', (req, res) => {
+    const data = jsonData['team'];
+    if (data) {
+        res.json(data);
+    } else {
+        res.status(500).send('Error reading Team data');
+    }
+});
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
