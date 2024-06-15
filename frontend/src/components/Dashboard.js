@@ -4,6 +4,8 @@ import DoughnutChart from './DoughnutChart';
 import BarChart from './BarChart';
 import '../css/Dashboard.css';
 
+const API_BASE_URL = 'https://assignment01-mj8h.onrender.com';
+
 const Dashboard = () => {
     const [customerTypes, setCustomerTypes] = useState([]);
     const [accountIndustries, setAccountIndustries] = useState([]);
@@ -13,10 +15,10 @@ const Dashboard = () => {
     const fetchData = async () => {
         try {
             const [customerTypesRes, accountIndustriesRes, acvRangesRes, teamsRes] = await Promise.all([
-                axios.get('http://localhost:3000/customer-types'),
-                axios.get('http://localhost:3000/account-industries'),
-                axios.get('http://localhost:3000/acv-ranges'),
-                axios.get('http://localhost:3000/team')
+                axios.get(`${API_BASE_URL}/customer-types`),
+                axios.get(`${API_BASE_URL}/account-industries`),
+                axios.get(`${API_BASE_URL}/acv-ranges`),
+                axios.get(`${API_BASE_URL}/team`)
             ]);
 
             setCustomerTypes(customerTypesRes.data);
